@@ -1,12 +1,17 @@
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int a,b;
-    cin>>a>>b;
-    if(a+b>3){
-        cout<<"Possible";
+
+int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    int A, B;
+    cin >> A >> B;
+
+    if (A % 3 == 0 || B % 3 == 0 || (A + B) % 3 == 0) {
+        cout << "Possible" <<"\n";
+    } else {
+        cout << "Impossible" <<"\n";
     }
-    else{
-        cout<<"Impossible";
-    }
+
+return 0;
 }
